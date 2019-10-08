@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pome-Tia</title>
+        <head>
+            <link rel="stylesheet" type="text/css" href="Website.css">
+            
+<!-- Navigation -->
+            
+                <ul class="vertical-menu">
+                    <li><a href="Gallery.html" class="pt-button pt-bar-item">Gallery</a></li>
+                    <li><a href="About_Me.html" class="pt-button pt-bar-item">About me</a></li>
+                    <li><a href="TOS.html" class="pt-button pt-bar-item">T.O.S.</a></li>
+                    <li><a href="Contact.html" class="pt-button pt-bar-item">Contact</a></li>
+                    <li><a href="Commissions.html" class="pt-button pt-bar-item">Commissions</a></li>
+                </ul>
+            
+<!-- Background -->
+            
+            <img src="Website/space.png" class="space" alt="galaxy" width="100%" height="100%">
+            
+        </head>
+    
+<!-- Slide Show-->
+            
+        <body>
+            
+            <div class="background">
+                <a href="Gallery.html"><img src="Website/slideshow.png" class="screen" alt="Screen" width="45%"></a>
+            </div>
+            
+            <div class="container">
+                <div class="home-slider-content">
+                    <img class="HOMEslides" src="Gallery/Eona.png" alt="1" style="width:100%">
+                    <img class="HOMEslides" src="Gallery/Perish_Song.png" alt="2" style="width:100%">
+                    <img class="HOMEslides" src="Gallery/Ocean_planet_home.png" alt="3" style="width:100%">
+                </div>
+
+            <script>
+                var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("HOMEslides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+            </script>
+            </div>
+            <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+        </body>    
+
+</html>

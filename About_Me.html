@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+        <head>
+            <link rel="stylesheet" type="text/css" href="Website.css">
+            
+<!-- Navigation -->
+            
+                <section class="horizontal-menu">
+                    <a href="index.html" class="pt-button pt-bar-item">Home</a>
+                    <a> | </a>
+                    <a href="Gallery.html" class="pt-button pt-bar-item">Gallery</a>
+                    <a> | </a>
+                    <a href="TOS.html" class="pt-button pt-bar-item">T.O.S.</a>
+                    <a> | </a>
+                    <a href="Contact.html" class="pt-button pt-bar-item">Contact</a>
+                    <a> | </a>
+                    <a href="Commissions.html" class="pt-button pt-bar-item">Commissions Status</a>
+                </section>
+            
+<!-- Background -->
+            
+            <img src="Website/space.png" class="space" alt="galaxy" width="100%" height="100%">
+            <img src="Website/hologram_6.png" class="navigation-holo" alt="navigation-holo" width="90%" height="10%">
+            
+        </head>
+    
+        <body>
+            
+        <div class="gif">
+            <img src="Website/1.png" class="overlay" alt="overlay" width="46%">
+            
+            <img src="Website/1.gif" loop=infinite class="figure" alt="figure" width="25%">
+        </div>
+        <img src="Website/name.png" class="AboutMe" alt="My name is Pome-Tia" width="70%">
+            
+        <div class="AM-slider-content">
+                <img class="AMslides" src="Website/AboutMeSlides1.png" alt="1" style="width:70%">
+                <img class="AMslides" src="Website/AboutMeSlides2.png" alt="2" style="width:70%">
+                <img class="AMslides" src="Website/AboutMeSlides3.png" alt="3" style="width:70%">
+                <img class="AMslides" src="Website/AboutMeSlides4.png" alt="4" style="width:70%">
+                <img class="AMslides" src="Website/AboutMeSlides5.png" alt="5" style="width:70%">
+                
+                <button class="AM-slider-button-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="AM-slider-button-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("AMslides");
+                    if (n > x.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+            <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+        </body>
+</html>
